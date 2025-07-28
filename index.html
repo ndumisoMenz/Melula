@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Melula</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Melula.css"/>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        
+        <div class="full-screen-container"></div>
+        <script src="https://unpkg.com/supersimpledev/react.js"></script>
+        <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+        <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+        <script type="text/babel">
+           function FirstSectionBg(){
+                return(
+                    <section class="Container">
+                        <div class="bgcontainer"></div>
+                            <div class="linkline">
+                                <a href="#">SHOP</a><a href="#">ABOUT</a>
+                            </div>
+                            <div class="customnav">
+                                <div><img src="melulasm.png"/></div>
+                                
+                                <div class="cart-container">
+                                    <i class="fas fa-shopping-cart cart-icon"></i>
+                                    <div class="cart-badge">0</div>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="h-container">
+                                <h1>FOR COLOURFUL</h1>
+                                <h1>STEPS IN LIFE</h1>
+                                <button class="shop-button">Visit our shop</button>
+                            </div>
+                    </section>
+                );
+            };
+
+            function WebSection(){
+                return(
+                    <section class="WebSect">
+                        <img src="27.jpg"/>
+                        <img src="23-1.jpg"/>
+                    </section>
+                );
+            }
+            function WebSection1(){
+                return(
+                    <section class="WebSect1">
+                        <div>
+                            <p>Melula Kids shoes</p>
+                            <p>
+                                Melula a Copenhagen based kids fashion brand. Colourful, playfull and gender neutral.
+                                Designed in Denmark, produced in Portugal.
+                            </p>
+                            <a href="#" class="custom-link">Read our story.</a>
+                        </div>
+                       
+                    </section>
+                )
+                
+            }
+            function WebSection2(){
+                return(
+                    <section class="WebSect2">
+                        <img src="30.jpg"/>
+                        <div class="ImgStack">
+                            <img src="31.jpg"/>
+                            <img src="12.jpg"/>
+                        </div>
+                    </section>
+                )
+            }
+            function WebSection3(){
+                return(
+                    <section class="WebSect2">
+                        <div class="ImgStack">
+                            <img src="55.jpg"/>
+                            <img src="37.jpg"/>
+                        </div>
+                        <img src="36.jpg"/>
+                    </section>
+                )
+            }
+            function WebSection4(){
+                return(
+                    <section class="WebSect2">
+                        <img src="15.jpg"/>
+                        <div class="ImgStack">
+                            <img src="44.jpg"/>
+                            <img src="Comp_2.gif"/>
+                        </div>
+                    </section>
+                )
+            }
+            function WebSection5(){
+                return(
+                    <section class="WebSect3">
+                        <h2>They talk about us</h2>
+                        <div>
+                            <img src="555.png"/>
+                        </div>
+                        <hr/> 
+                        <div class="blockcontainer">
+                            <div class="block">
+                                <a href="#">Follow us on Instagram  <span>@melula_copenhagen</span></a>
+                                <div class="Imgblock">
+                                    <img src="image-asset.jpeg"/>
+                                    <img src="image-asset1.jpeg"/>
+                                </div>
+                                
+                            </div>
+                            <div class="block">
+                                <h2>Subscribe</h2>
+                                    <p>Sign up with your email address to receive news and updates.</p>
+
+                                    <form>
+                                    <input type="email" placeholder="Email Address" required/>
+                                    <button type="submit">SIGN UP</button>
+                                    </form>
+
+                                    <div class="privacy">We respect your privacy.</div>
+                            </div>
+                        </div>
+                    </section>
+                )
+            }
+            function WebSection6(){
+                return(
+                    <footer class="WebSect4">
+                        <p><span>Melula</span> 11 Dannevirkegade, København, 1763, Denmark <a href="#">hello@melula.com</a></p>
+                        <div class="social-icons">
+                            <a href="#" target="_blank"><img src="instagram1.webp"/></a>
+                            <a href="#" target="_blank"><img src="facebook1.jpg"/></a>
+                            <a href="#" target="_blank"><img src="pinterest.jpg"/></a>
+                        </div>
+                        <p><a href="">Contact & Wholesale</a> <a href="#">Terms and conditions</a> <a href="#">Shipping & Returns</a></p>
+
+                    </footer>
+                )
+                
+            }
+            function App(){
+                return(
+                    <>
+                    <FirstSectionBg/>
+                    <WebSection/>
+                    <WebSection1/>
+                    <WebSection2/>
+                    <WebSection3/>
+                    <WebSection4/>
+                    <WebSection5/>
+                    <WebSection6/>
+                    </>
+                );
+            };
+        
+        const container = document.querySelector('.full-screen-container');
+        ReactDOM.createRoot(container).render(<App/>);
+
+    </script>
+    </body>
+</html>
